@@ -41,8 +41,8 @@ var HelloWorldSceneAR = createReactClass({
 
           <Viro3DObject
             source={require('./res/arrow.obj')}
-            position={[0, -1, 0]}
-            scale={[.2, .2, .2]}
+            position={[0, .1, 0]}
+            scale={[.1, .1, .1]}
             rotation={[90, 0, 0]}
             type="OBJ"
             dragType="FixedDistance" onDrag={() => { }}
@@ -64,7 +64,7 @@ var HelloWorldSceneAR = createReactClass({
 
 ViroARTrackingTargets.createTargets({
   "fordtarget": {
-    source: require('./res/ford.jpg'),
+    source: require('./res/ford-focus.jpg'),
     orientation: "Up",
     physicalWidth: 0.05 // real world width in meters
   }
